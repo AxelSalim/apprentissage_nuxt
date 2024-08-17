@@ -1,3 +1,6 @@
+
 <template>
-    <h1>index page</h1>
+    <div class="Main">
+        <ProfileHeaderAvatar />
+    </div>
 </template>
