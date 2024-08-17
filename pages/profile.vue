@@ -1,12 +1,10 @@
-<script setup>
+<script lang="ts" setup>
     const { sayHello } = useUtils();
     sayHello();
 </script>
 
 <template>
     <div class="container py-3 mx-auto Main">
-        <h1>Hello word</h1>
-        <IconsBell />
-        <img src="@/assets/images/1.jpg" alt="" />
+        <h1 class="text-teal-500">Profile</h1>
     </div>
 </template>
