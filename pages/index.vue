@@ -2,9 +2,13 @@
     // const { sayHello } = useUtils();
     // sayHello();
 
-    const { $sayHello } = useNuxtApp();
+    // const { $sayHello } = useNuxtApp();
 
-    console.log(useNuxtApp());
+    // console.log(useNuxtApp());
+
+    definePageMeta({
+        middleware: 'auth'
+    })
     
 </script>
 
