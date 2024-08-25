@@ -34,7 +34,7 @@
 </template> -->
 
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
  const counter = useCounter();
 </script>
 
@@ -45,6 +45,19 @@
     <button @click="counter--">-</button>
   </div>
   <Counter id="counter"/>
+</template> -->
+
+
+<script setup>
+import { useCounterStore } from '~/stores/myStore';
+
+const store = useCounterStore();
+
+console.log(store);
+</script>
+
+<template>
+    <div>hello</div>
 </template>
 
 
