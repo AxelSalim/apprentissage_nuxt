@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
     // const { sayHello } = useUtils();
     // sayHello();
 
@@ -10,7 +10,7 @@
         middleware: 'auth'
     })
     
-</script>
+</script> -->
 
 <!-- <template>
     <div class="container py-3 mx-auto Main">
@@ -26,8 +26,25 @@
     </div>
 </template> -->
 
-<template>
+<!-- Package content -->
+<!-- <template>
     <div>
         <ContentDoc />
     </div>
+</template> -->
+
+
+<script setup lang="ts">
+ const counter = useCounter();
+</script>
+
+<template>
+  <div id="main">
+    Counter: {{ counter }}
+    <button @click="counter++">+</button>
+    <button @click="counter--">-</button>
+  </div>
+  <Counter id="counter"/>
 </template>
+
+
